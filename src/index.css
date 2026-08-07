@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  transition: background-color .25s ease, color .25s ease;
+}
+
+
+.dark-mode {
+  background-color: #141414;
+  color: white;
+}
+
+
+.light-mode {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+
+/* جلوگیری از کند شدن Switch */
+.ant-switch {
+  transition: background-color .2s ease !important;
+}
